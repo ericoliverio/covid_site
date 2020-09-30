@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2440ba2915c4cd08e2f4452480fb1b7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f2440ba2915c4cd08e2f4452480fb1b7" ></div>
+        
+</body>
+<script>    
+    
+            var map_f2440ba2915c4cd08e2f4452480fb1b7 = L.map(
+                "map_f2440ba2915c4cd08e2f4452480fb1b7",
+                {
+                    center: [42.895, -78.8815],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    name: "Test",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8369f2c5f924d3a93eea808a2f8a049 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f2440ba2915c4cd08e2f4452480fb1b7);
+        
+    
+            var marker_cluster_dfac58ea439344d1a047506325f29114 = L.markerClusterGroup(
+                {}
+            );
+            map_f2440ba2915c4cd08e2f4452480fb1b7.addLayer(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+            var circle_marker_0f24c24aa77c40a0a0e6026d9ff78d7c = L.circleMarker(
+                [43.0414, -78.4963],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.498309382924767, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_c11f0d6ac38045c3b5a1bbf04cc92ad4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c3f51aadc2e4c4b8682b4a5e7d37008 = $(`<div id="html_8c3f51aadc2e4c4b8682b4a5e7d37008" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Akron: 14001</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>41</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>3</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c11f0d6ac38045c3b5a1bbf04cc92ad4.setContent(html_8c3f51aadc2e4c4b8682b4a5e7d37008);
+        
+
+        circle_marker_0f24c24aa77c40a0a0e6026d9ff78d7c.bindPopup(popup_c11f0d6ac38045c3b5a1bbf04cc92ad4)
+        ;
+
+        
+    
+    
+            circle_marker_0f24c24aa77c40a0a0e6026d9ff78d7c.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c584b281612049aab5ac42fff585056b = L.circleMarker(
+                [42.894667999999996, -78.4833],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.202455919395466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_e9e38e31c3fd494f82c3a29a3cb874e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c632cfd68014390bbca40d764a51cca = $(`<div id="html_1c632cfd68014390bbca40d764a51cca" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Alden: 14004</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>61</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e9e38e31c3fd494f82c3a29a3cb874e8.setContent(html_1c632cfd68014390bbca40d764a51cca);
+        
+
+        circle_marker_c584b281612049aab5ac42fff585056b.bindPopup(popup_e9e38e31c3fd494f82c3a29a3cb874e8)
+        ;
+
+        
+    
+    
+            circle_marker_c584b281612049aab5ac42fff585056b.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_271fec70c8274e33b9285d05a05736d4 = L.circleMarker(
+                [42.6361, -79.02794],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.586731588557517, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_814e6870848c470cad28ccdab08f959b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68ef7dc675de4aa9bdd37096cf1fdcc0 = $(`<div id="html_68ef7dc675de4aa9bdd37096cf1fdcc0" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Angola: 14006</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>17</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.2%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_814e6870848c470cad28ccdab08f959b.setContent(html_68ef7dc675de4aa9bdd37096cf1fdcc0);
+        
+
+        circle_marker_271fec70c8274e33b9285d05a05736d4.bindPopup(popup_814e6870848c470cad28ccdab08f959b)
+        ;
+
+        
+    
+    
+            circle_marker_271fec70c8274e33b9285d05a05736d4.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_90cf888187c4414795302c0e72ff1cfe = L.circleMarker(
+                [43.0811, -78.4012],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_2d25a8cc3b82420b926bf31fb7b98986 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_461ec34182024ef691d8823b590627d6 = $(`<div id="html_461ec34182024ef691d8823b590627d6" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Basom: 14013</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>0</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2d25a8cc3b82420b926bf31fb7b98986.setContent(html_461ec34182024ef691d8823b590627d6);
+        
+
+        circle_marker_90cf888187c4414795302c0e72ff1cfe.bindPopup(popup_2d25a8cc3b82420b926bf31fb7b98986)
+        ;
+
+        
+    
+    
+            circle_marker_90cf888187c4414795302c0e72ff1cfe.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5973038caff94cf3951fb9a03c912202 = L.circleMarker(
+                [42.6214, -78.7217],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4422507403751235, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_428e94103b4b422e830e7ceabe4b913c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c0ac0b63a094e8996f317048ecc0a8c = $(`<div id="html_5c0ac0b63a094e8996f317048ecc0a8c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Boston: 14025</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>9</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_428e94103b4b422e830e7ceabe4b913c.setContent(html_5c0ac0b63a094e8996f317048ecc0a8c);
+        
+
+        circle_marker_5973038caff94cf3951fb9a03c912202.bindPopup(popup_428e94103b4b422e830e7ceabe4b913c)
+        ;
+
+        
+    
+    
+            circle_marker_5973038caff94cf3951fb9a03c912202.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_56ed514aa9ee4755a9e02bf83c98bf6a = L.circleMarker(
+                [42.9441, -78.6867],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.6765578635014835, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_af3b2519e4e2418abd95c9f29bee45a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f677868cecc4d93b0623d747bedee19 = $(`<div id="html_4f677868cecc4d93b0623d747bedee19" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Bowmanswille: 14026</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>3</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_af3b2519e4e2418abd95c9f29bee45a7.setContent(html_4f677868cecc4d93b0623d747bedee19);
+        
+
+        circle_marker_56ed514aa9ee4755a9e02bf83c98bf6a.bindPopup(popup_af3b2519e4e2418abd95c9f29bee45a7)
+        ;
+
+        
+    
+    
+            circle_marker_56ed514aa9ee4755a9e02bf83c98bf6a.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f738887d4bbb4ba8ad832c3ab78990bf = L.circleMarker(
+                [42.5737, -78.507],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4903154399557277, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_c25d76f085384aa59467b0f08e468a5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_378df402b3624f15bf0c2095e8fd8614 = $(`<div id="html_378df402b3624f15bf0c2095e8fd8614" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Chaffee: 14030</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>3</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>1</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.2%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c25d76f085384aa59467b0f08e468a5d.setContent(html_378df402b3624f15bf0c2095e8fd8614);
+        
+
+        circle_marker_f738887d4bbb4ba8ad832c3ab78990bf.bindPopup(popup_c25d76f085384aa59467b0f08e468a5d)
+        ;
+
+        
+    
+    
+            circle_marker_f738887d4bbb4ba8ad832c3ab78990bf.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7026b694cdd4c6f92ef9958b4fcd89d = L.circleMarker(
+                [42.993, -78.607],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.936541737649064, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_cc84bcccdc44435da10b1f796cb3daa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea8e3284d8e417f9dfea28d21fa9ae1 = $(`<div id="html_bea8e3284d8e417f9dfea28d21fa9ae1" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Clarence: 14031</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>81</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>2</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.9%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>2</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_cc84bcccdc44435da10b1f796cb3daa2.setContent(html_bea8e3284d8e417f9dfea28d21fa9ae1);
+        
+
+        circle_marker_e7026b694cdd4c6f92ef9958b4fcd89d.bindPopup(popup_cc84bcccdc44435da10b1f796cb3daa2)
+        ;
+
+        
+    
+    
+            circle_marker_e7026b694cdd4c6f92ef9958b4fcd89d.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_91a2e35414834e0a921b540d4e33b325 = L.circleMarker(
+                [43.04275, -78.6292],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.571535861809989, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_ef59b8f9b8a7414fafad595c60a0b47d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3b83b4c472f474eac9fbe0ae68b3cf0 = $(`<div id="html_d3b83b4c472f474eac9fbe0ae68b3cf0" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Clearence: 14032</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>35</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ef59b8f9b8a7414fafad595c60a0b47d.setContent(html_d3b83b4c472f474eac9fbe0ae68b3cf0);
+        
+
+        circle_marker_91a2e35414834e0a921b540d4e33b325.bindPopup(popup_ef59b8f9b8a7414fafad595c60a0b47d)
+        ;
+
+        
+    
+    
+            circle_marker_91a2e35414834e0a921b540d4e33b325.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_69d71fbc78b8423ea3c18e607ef82adc = L.circleMarker(
+                [42.6521, -78.6869],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.67598017124831, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_0d54b951b6b8417b90fa5622e8af0d7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37d782bc78594efe9bbe619c38c4548c = $(`<div id="html_37d782bc78594efe9bbe619c38c4548c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Colden: 14033</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>1</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_0d54b951b6b8417b90fa5622e8af0d7c.setContent(html_37d782bc78594efe9bbe619c38c4548c);
+        
+
+        circle_marker_69d71fbc78b8423ea3c18e607ef82adc.bindPopup(popup_0d54b951b6b8417b90fa5622e8af0d7c)
+        ;
+
+        
+    
+    
+            circle_marker_69d71fbc78b8423ea3c18e607ef82adc.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cbece9b80c6b4f029678a3247101cbc5 = L.circleMarker(
+                [42.49089, -78.8573],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5470459518599562, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_21fd20db39ab49a39d385435bedd5339 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdade8579968449dbf95b4afb0e356d2 = $(`<div id="html_fdade8579968449dbf95b4afb0e356d2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Collins: 14034</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>1</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_21fd20db39ab49a39d385435bedd5339.setContent(html_fdade8579968449dbf95b4afb0e356d2);
+        
+
+        circle_marker_cbece9b80c6b4f029678a3247101cbc5.bindPopup(popup_21fd20db39ab49a39d385435bedd5339)
+        ;
+
+        
+    
+    
+            circle_marker_cbece9b80c6b4f029678a3247101cbc5.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_79aabf59a76e4a3daa56d71a3b558725 = L.circleMarker(
+                [42.8054, -78.4507],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2864493996569468, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_727e888c587e4e65a4558daca9dd840f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe038053cf6840058ad8a494214e4177 = $(`<div id="html_fe038053cf6840058ad8a494214e4177" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Cowlesville: 14037</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>1</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.1%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_727e888c587e4e65a4558daca9dd840f.setContent(html_fe038053cf6840058ad8a494214e4177);
+        
+
+        circle_marker_79aabf59a76e4a3daa56d71a3b558725.bindPopup(popup_727e888c587e4e65a4558daca9dd840f)
+        ;
+
+        
+    
+    
+            circle_marker_79aabf59a76e4a3daa56d71a3b558725.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2507cca68f9f4eaf85caca9e39587f75 = L.circleMarker(
+                [42.89925, -78.70735],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1838169913507395, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_2fe6287c36794dd6bc3e6063a4e00764 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52c5c494e83c43c69db327f7ca446c1a = $(`<div id="html_52c5c494e83c43c69db327f7ca446c1a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Depew: 14043</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>102</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>2</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>2</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2fe6287c36794dd6bc3e6063a4e00764.setContent(html_52c5c494e83c43c69db327f7ca446c1a);
+        
+
+        circle_marker_2507cca68f9f4eaf85caca9e39587f75.bindPopup(popup_2fe6287c36794dd6bc3e6063a4e00764)
+        ;
+
+        
+    
+    
+            circle_marker_2507cca68f9f4eaf85caca9e39587f75.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6a7257cc94b4c2faaef75764bd6941e = L.circleMarker(
+                [42.69266, -78.9934],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.192546583850931, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_f7c4172f78a344038a2203d336ca818f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf7128a061444c46993dd8b7bcb8447c = $(`<div id="html_bf7128a061444c46993dd8b7bcb8447c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Derby: 14047</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>18</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>2</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f7c4172f78a344038a2203d336ca818f.setContent(html_bf7128a061444c46993dd8b7bcb8447c);
+        
+
+        circle_marker_c6a7257cc94b4c2faaef75764bd6941e.bindPopup(popup_f7c4172f78a344038a2203d336ca818f)
+        ;
+
+        
+    
+    
+            circle_marker_c6a7257cc94b4c2faaef75764bd6941e.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d33534d168f4c17abb776286e71fa5f = L.circleMarker(
+                [43.0442, -78.695],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2202426662571035, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_eaa991740cd64d5cb8e332520e62892b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60f84426042243e0b42fe04d959fab19 = $(`<div id="html_60f84426042243e0b42fe04d959fab19" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Swormville/East Amherst/: 14051</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>81</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_eaa991740cd64d5cb8e332520e62892b.setContent(html_60f84426042243e0b42fe04d959fab19);
+        
+
+        circle_marker_2d33534d168f4c17abb776286e71fa5f.bindPopup(popup_eaa991740cd64d5cb8e332520e62892b)
+        ;
+
+        
+    
+    
+            circle_marker_2d33534d168f4c17abb776286e71fa5f.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2010f9afc17b4fc1aff7b8b45a25c999 = L.circleMarker(
+                [42.775, -78.5753],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.986265797218536, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_8bd4a6bc10e9491fa9cf2ec45de06864 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc60c3612e61474cae0cc7384dd16188 = $(`<div id="html_cc60c3612e61474cae0cc7384dd16188" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>East Aurora: 14052</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>254</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>11</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_8bd4a6bc10e9491fa9cf2ec45de06864.setContent(html_cc60c3612e61474cae0cc7384dd16188);
+        
+
+        circle_marker_2010f9afc17b4fc1aff7b8b45a25c999.bindPopup(popup_8bd4a6bc10e9491fa9cf2ec45de06864)
+        ;
+
+        
+    
+    
+            circle_marker_2010f9afc17b4fc1aff7b8b45a25c999.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2c1f206e2e9740a9ae58bdc79e89c76c = L.circleMarker(
+                [42.5468, -78.5954],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0676156583629892, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_d344ed6e333f48d2a1cab774eba5f28c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ec8a2cfc2954303b56346103cc04d79 = $(`<div id="html_2ec8a2cfc2954303b56346103cc04d79" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>East Conchord: 14055</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>1</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.1%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_d344ed6e333f48d2a1cab774eba5f28c.setContent(html_2ec8a2cfc2954303b56346103cc04d79);
+        
+
+        circle_marker_2c1f206e2e9740a9ae58bdc79e89c76c.bindPopup(popup_d344ed6e333f48d2a1cab774eba5f28c)
+        ;
+
+        
+    
+    
+            circle_marker_2c1f206e2e9740a9ae58bdc79e89c76c.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e470cdbe24134e0e86b47f00c482b2a5 = L.circleMarker(
+                [42.6417, -78.8709],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.066042385411532, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_304ca9ae531c437eb47b8af93579e831 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb4222c2360e4b7eb841917a4797089e = $(`<div id="html_eb4222c2360e4b7eb841917a4797089e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Eden: 14057</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>22</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>1</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0.5</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_304ca9ae531c437eb47b8af93579e831.setContent(html_eb4222c2360e4b7eb841917a4797089e);
+        
+
+        circle_marker_e470cdbe24134e0e86b47f00c482b2a5.bindPopup(popup_304ca9ae531c437eb47b8af93579e831)
+        ;
+
+        
+    
+    
+            circle_marker_e470cdbe24134e0e86b47f00c482b2a5.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ac78b0b235442548ed7c80644fe15b6 = L.circleMarker(
+                [42.8255, -78.62666],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.709168252546736, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_5fd7692e0715429aa22a919df3a1b732 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a33b7d261bfc4e4a9b250a3d92684d5b = $(`<div id="html_a33b7d261bfc4e4a9b250a3d92684d5b" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Elma: 14059</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>34</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_5fd7692e0715429aa22a919df3a1b732.setContent(html_a33b7d261bfc4e4a9b250a3d92684d5b);
+        
+
+        circle_marker_2ac78b0b235442548ed7c80644fe15b6.bindPopup(popup_5fd7692e0715429aa22a919df3a1b732)
+        ;
+
+        
+    
+    
+            circle_marker_2ac78b0b235442548ed7c80644fe15b6.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62668dade3a44fdab163e5b5ac1d00f6 = L.circleMarker(
+                [43.0269, -78.762],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40.06993006993007, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_02a5f90f08de41a5abe1f88c1605fc9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_974aa9e7e61a4a4189b9b64338b70390 = $(`<div id="html_974aa9e7e61a4a4189b9b64338b70390" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Getzville: 14068</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>191</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>8</td>     </tr>     <tr>       <th>% Infected</th>       <td>2.7%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>8</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_02a5f90f08de41a5abe1f88c1605fc9c.setContent(html_974aa9e7e61a4a4189b9b64338b70390);
+        
+
+        circle_marker_62668dade3a44fdab163e5b5ac1d00f6.bindPopup(popup_02a5f90f08de41a5abe1f88c1605fc9c)
+        ;
+
+        
+    
+    
+            circle_marker_62668dade3a44fdab163e5b5ac1d00f6.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0abb4a39ea084dc6a9419db18103ed68 = L.circleMarker(
+                [42.6057, -78.6191],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.331753554502369, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_38516b1e72ff43779e6f555fb9fa3a73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cba81a0cf5547ea86a1f5256cbdf7b8 = $(`<div id="html_2cba81a0cf5547ea86a1f5256cbdf7b8" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Glenwood: 14069</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>3</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_38516b1e72ff43779e6f555fb9fa3a73.setContent(html_2cba81a0cf5547ea86a1f5256cbdf7b8);
+        
+
+        circle_marker_0abb4a39ea084dc6a9419db18103ed68.bindPopup(popup_38516b1e72ff43779e6f555fb9fa3a73)
+        ;
+
+        
+    
+    
+            circle_marker_0abb4a39ea084dc6a9419db18103ed68.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b814267908d4fa49b3c3bfec84ad850 = L.circleMarker(
+                [42.44377, -78.90769],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1194295900178255, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_27402c73e6a3490fb64e35098eb57170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_718861297c1f4c77b13e5bbd81f8cfa9 = $(`<div id="html_718861297c1f4c77b13e5bbd81f8cfa9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Gowanda: 14070</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>14</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>2</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.2%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_27402c73e6a3490fb64e35098eb57170.setContent(html_718861297c1f4c77b13e5bbd81f8cfa9);
+        
+
+        circle_marker_3b814267908d4fa49b3c3bfec84ad850.bindPopup(popup_27402c73e6a3490fb64e35098eb57170)
+        ;
+
+        
+    
+    
+            circle_marker_3b814267908d4fa49b3c3bfec84ad850.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a2e0d9720bae42c19bdec75062201862 = L.circleMarker(
+                [43.0119, -78.9559],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.215078040640031, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_a7d8f8622cae4e39befcb21a5299d13a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edbeba73df304f128fc359388991df71 = $(`<div id="html_edbeba73df304f128fc359388991df71" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Grand Island: 14072</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>98</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>4</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>1.3</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a7d8f8622cae4e39befcb21a5299d13a.setContent(html_edbeba73df304f128fc359388991df71);
+        
+
+        circle_marker_a2e0d9720bae42c19bdec75062201862.bindPopup(popup_a7d8f8622cae4e39befcb21a5299d13a)
+        ;
+
+        
+    
+    
+            circle_marker_a2e0d9720bae42c19bdec75062201862.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c618319e9ebc4898bbbb142038f0fc6b = L.circleMarker(
+                [42.716, -78.82434],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.511266900350526, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_a5606b0447cc4ccab1aadf3e4e1b3f1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e0dbf74109248dca4148b027fde9957 = $(`<div id="html_2e0dbf74109248dca4148b027fde9957" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hamburg: 14075</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>210</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a5606b0447cc4ccab1aadf3e4e1b3f1d.setContent(html_2e0dbf74109248dca4148b027fde9957);
+        
+
+        circle_marker_c618319e9ebc4898bbbb142038f0fc6b.bindPopup(popup_a5606b0447cc4ccab1aadf3e4e1b3f1d)
+        ;
+
+        
+    
+    
+            circle_marker_c618319e9ebc4898bbbb142038f0fc6b.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e8a1cca39e7d4dd0a43ef4c35da27ee2 = L.circleMarker(
+                [42.6405, -78.5435],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.928406466512702, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_c7c922edf80744c69c364a1198eac986 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fae114cf21084c788a36c622147e001c = $(`<div id="html_fae114cf21084c788a36c622147e001c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Holland: 14080</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>20</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>1</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c7c922edf80744c69c364a1198eac986.setContent(html_fae114cf21084c788a36c622147e001c);
+        
+
+        circle_marker_e8a1cca39e7d4dd0a43ef4c35da27ee2.bindPopup(popup_c7c922edf80744c69c364a1198eac986)
+        ;
+
+        
+    
+    
+            circle_marker_e8a1cca39e7d4dd0a43ef4c35da27ee2.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b08f04df4cc1487eab9eb2a4910bbe00 = L.circleMarker(
+                [42.4617, -79.027],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4232633279483036, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_4be1a69a0b984f2d99bfebbcd393dfea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f7409ff91084c53a42754ed5d0e3ef7 = $(`<div id="html_0f7409ff91084c53a42754ed5d0e3ef7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Irvina: 14081</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>5</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.2%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_4be1a69a0b984f2d99bfebbcd393dfea.setContent(html_0f7409ff91084c53a42754ed5d0e3ef7);
+        
+
+        circle_marker_b08f04df4cc1487eab9eb2a4910bbe00.bindPopup(popup_4be1a69a0b984f2d99bfebbcd393dfea)
+        ;
+
+        
+    
+    
+            circle_marker_b08f04df4cc1487eab9eb2a4910bbe00.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b32329c26b845ecbc658937fc974c4e = L.circleMarker(
+                [42.71738, -72.95],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.875968992248062, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_6d9788a3cdda4085af4a11b865cab7e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2e1f07f71774f0d942f126306a8c64a = $(`<div id="html_a2e1f07f71774f0d942f126306a8c64a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Lakeview: 14085</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>19</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_6d9788a3cdda4085af4a11b865cab7e4.setContent(html_a2e1f07f71774f0d942f126306a8c64a);
+        
+
+        circle_marker_3b32329c26b845ecbc658937fc974c4e.bindPopup(popup_6d9788a3cdda4085af4a11b865cab7e4)
+        ;
+
+        
+    
+    
+            circle_marker_3b32329c26b845ecbc658937fc974c4e.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ec0799aee9c49a4ab3dd7c9596bf670 = L.circleMarker(
+                [42.905840000000005, -78.6296],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.325839168524508, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_37a4c9730a4c4b67bbd0d0e78b77c52b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7809abd65e5c41be94fad4f26af37aa2 = $(`<div id="html_7809abd65e5c41be94fad4f26af37aa2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Lancaster(nowhere): 14086</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>198</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>10</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.6%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>3.3</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_37a4c9730a4c4b67bbd0d0e78b77c52b.setContent(html_7809abd65e5c41be94fad4f26af37aa2);
+        
+
+        circle_marker_2ec0799aee9c49a4ab3dd7c9596bf670.bindPopup(popup_37a4c9730a4c4b67bbd0d0e78b77c52b)
+        ;
+
+        
+    
+    
+            circle_marker_2ec0799aee9c49a4ab3dd7c9596bf670.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e8ba7ae282d74e1c8a52ef668086a470 = L.circleMarker(
+                [42.5386, -78.9061],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.170528266913809, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_722ffa2fb4bb44f69a287bb6126d3286 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab4421266ac44022af65a8ee2b9b68b3 = $(`<div id="html_ab4421266ac44022af65a8ee2b9b68b3" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Lawtons: 14091</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>3</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_722ffa2fb4bb44f69a287bb6126d3286.setContent(html_ab4421266ac44022af65a8ee2b9b68b3);
+        
+
+        circle_marker_e8ba7ae282d74e1c8a52ef668086a470.bindPopup(popup_722ffa2fb4bb44f69a287bb6126d3286)
+        ;
+
+        
+    
+    
+            circle_marker_e8ba7ae282d74e1c8a52ef668086a470.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66a4474ad1524a9aa46369b2d8c39745 = L.circleMarker(
+                [42.8368, -78.5573],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.19672131147541, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_1d10c024953f4a4dbe6e6fc0f4a0d6fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8e6372e87e845ff950ce3177b337c6f = $(`<div id="html_f8e6372e87e845ff950ce3177b337c6f" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Marilla: 14102</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>7</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>1</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_1d10c024953f4a4dbe6e6fc0f4a0d6fb.setContent(html_f8e6372e87e845ff950ce3177b337c6f);
+        
+
+        circle_marker_66a4474ad1524a9aa46369b2d8c39745.bindPopup(popup_1d10c024953f4a4dbe6e6fc0f4a0d6fb)
+        ;
+
+        
+    
+    
+            circle_marker_66a4474ad1524a9aa46369b2d8c39745.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b14c6a1369349cb93e50baff066acc5 = L.circleMarker(
+                [42.581, -78.8707],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.817422434367542, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_6a4e5c40fda74eb0986014d2a1693ccc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37b12907e4f04ed48dc1c6741ee7030f = $(`<div id="html_37b12907e4f04ed48dc1c6741ee7030f" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>North Collins: 14111</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>13</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_6a4e5c40fda74eb0986014d2a1693ccc.setContent(html_37b12907e4f04ed48dc1c6741ee7030f);
+        
+
+        circle_marker_1b14c6a1369349cb93e50baff066acc5.bindPopup(popup_6a4e5c40fda74eb0986014d2a1693ccc)
+        ;
+
+        
+    
+    
+            circle_marker_1b14c6a1369349cb93e50baff066acc5.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8079274e2f04486e837cf8312c4f74b4 = L.circleMarker(
+                [42.7429, -78.7569],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.06308200660859, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_86ec2e8f5b73473ab2148d5074c340c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_446771c125464a029621f38812c53963 = $(`<div id="html_446771c125464a029621f38812c53963" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Orchard Park (valuecentric): 14127</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>201</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.7%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_86ec2e8f5b73473ab2148d5074c340c7.setContent(html_446771c125464a029621f38812c53963);
+        
+
+        circle_marker_8079274e2f04486e837cf8312c4f74b4.bindPopup(popup_86ec2e8f5b73473ab2148d5074c340c7)
+        ;
+
+        
+    
+    
+            circle_marker_8079274e2f04486e837cf8312c4f74b4.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_788ac609dcf24607b970d7b579c4f659 = L.circleMarker(
+                [42.5276, -78.5045],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.423076923076923, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_2a3d4d6fccc745aa81c5c1227ff36120 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a22d2269e6bc493db5e900c08c76d88c = $(`<div id="html_a22d2269e6bc493db5e900c08c76d88c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Sardinia: 14134</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>1</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2a3d4d6fccc745aa81c5c1227ff36120.setContent(html_a22d2269e6bc493db5e900c08c76d88c);
+        
+
+        circle_marker_788ac609dcf24607b970d7b579c4f659.bindPopup(popup_2a3d4d6fccc745aa81c5c1227ff36120)
+        ;
+
+        
+    
+    
+            circle_marker_788ac609dcf24607b970d7b579c4f659.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3ea4101d99448cc8f14e9662a57658f = L.circleMarker(
+                [42.69757, -78.5433],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7058823529411765, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_74c92e896bae4512a4fa6123038baa77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71a5dfe1333c4841810aa700fb946b39 = $(`<div id="html_71a5dfe1333c4841810aa700fb946b39" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>South Wales: 14139</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>1</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_74c92e896bae4512a4fa6123038baa77.setContent(html_71a5dfe1333c4841810aa700fb946b39);
+        
+
+        circle_marker_a3ea4101d99448cc8f14e9662a57658f.bindPopup(popup_74c92e896bae4512a4fa6123038baa77)
+        ;
+
+        
+    
+    
+            circle_marker_a3ea4101d99448cc8f14e9662a57658f.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e334ff40e01f4dcd8b62a30875aee325 = L.circleMarker(
+                [42.5329, -78.7157],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.152173913043478, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_b52236cd126043e68578d9be424b2ed6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9586c190321540b39f1d38f09e6cf69b = $(`<div id="html_9586c190321540b39f1d38f09e6cf69b" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Springville: 14141</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>42</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_b52236cd126043e68578d9be424b2ed6.setContent(html_9586c190321540b39f1d38f09e6cf69b);
+        
+
+        circle_marker_e334ff40e01f4dcd8b62a30875aee325.bindPopup(popup_b52236cd126043e68578d9be424b2ed6)
+        ;
+
+        
+    
+    
+            circle_marker_e334ff40e01f4dcd8b62a30875aee325.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae4614dc7a454b48886a9b5264cd94bf = L.circleMarker(
+                [42.7296, -78.41938],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_efdcb46e545a4dc5a0546efc0a56576f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49d051643ab940d8b7a2639caa6b4c0f = $(`<div id="html_49d051643ab940d8b7a2639caa6b4c0f" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Strykerville: 14145</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>0</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_efdcb46e545a4dc5a0546efc0a56576f.setContent(html_49d051643ab940d8b7a2639caa6b4c0f);
+        
+
+        circle_marker_ae4614dc7a454b48886a9b5264cd94bf.bindPopup(popup_efdcb46e545a4dc5a0546efc0a56576f)
+        ;
+
+        
+    
+    
+            circle_marker_ae4614dc7a454b48886a9b5264cd94bf.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_32548f66635446dcbafd9e317fb398c7 = L.circleMarker(
+                [42.992979999999996, -78.8812],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.170169881946444, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_7c0e04ace6fe4b5bae6f3c48fdfae780 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b5af958b051478aae8df2aaa0841e73 = $(`<div id="html_9b5af958b051478aae8df2aaa0841e73" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Tonawanda/Grand Island Bridge: 14150</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>227</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7c0e04ace6fe4b5bae6f3c48fdfae780.setContent(html_9b5af958b051478aae8df2aaa0841e73);
+        
+
+        circle_marker_32548f66635446dcbafd9e317fb398c7.bindPopup(popup_7c0e04ace6fe4b5bae6f3c48fdfae780)
+        ;
+
+        
+    
+    
+            circle_marker_32548f66635446dcbafd9e317fb398c7.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_95837824f18343c3a142d90a5e4c7781 = L.circleMarker(
+                [42.7087, -78.6647],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.937007874015748, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_cbfcc4ee391d48ab9feecef721acd4cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afff21fbbdcb42d1bdf95a17fd4d3a19 = $(`<div id="html_afff21fbbdcb42d1bdf95a17fd4d3a19" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>West Falls: 14170</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>6</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_cbfcc4ee391d48ab9feecef721acd4cc.setContent(html_afff21fbbdcb42d1bdf95a17fd4d3a19);
+        
+
+        circle_marker_95837824f18343c3a142d90a5e4c7781.bindPopup(popup_cbfcc4ee391d48ab9feecef721acd4cc)
+        ;
+
+        
+    
+    
+            circle_marker_95837824f18343c3a142d90a5e4c7781.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd0902b0a4664bc39c59de84f08d938a = L.circleMarker(
+                [42.894, -78.8872],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.33959650186163, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_34ed67ed5f2e4e6088fc10e3b3efda6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d312ac7b648043d68855632b1caf1bfb = $(`<div id="html_d312ac7b648043d68855632b1caf1bfb" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Allentown: 14201</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>172</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>3</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0.6</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_34ed67ed5f2e4e6088fc10e3b3efda6e.setContent(html_d312ac7b648043d68855632b1caf1bfb);
+        
+
+        circle_marker_dd0902b0a4664bc39c59de84f08d938a.bindPopup(popup_34ed67ed5f2e4e6088fc10e3b3efda6e)
+        ;
+
+        
+    
+    
+            circle_marker_dd0902b0a4664bc39c59de84f08d938a.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c6130c743024405be3a78cae44bf21a = L.circleMarker(
+                [42.888000000000005, -78.8762],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.136537969828688, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_a3dc4d764d304af6a30551b0e95ac5db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f319813e99fb460ebc36647ec47cae15 = $(`<div id="html_f319813e99fb460ebc36647ec47cae15" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Waterfront/Canalside/DT Delware and Main: 14202</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>16</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a3dc4d764d304af6a30551b0e95ac5db.setContent(html_f319813e99fb460ebc36647ec47cae15);
+        
+
+        circle_marker_0c6130c743024405be3a78cae44bf21a.bindPopup(popup_a3dc4d764d304af6a30551b0e95ac5db)
+        ;
+
+        
+    
+    
+            circle_marker_0c6130c743024405be3a78cae44bf21a.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bb98b31164a64bc692fb9fed0b134490 = L.circleMarker(
+                [42.8676, -78.87388],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.3955500618047, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_6b22403cdc394bdca5796e14676c04b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4805069ea72241a4a412d07c41688061 = $(`<div id="html_4805069ea72241a4a412d07c41688061" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Downtown (Main and Michigan to North): 14203</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>22</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>2</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_6b22403cdc394bdca5796e14676c04b4.setContent(html_4805069ea72241a4a412d07c41688061);
+        
+
+        circle_marker_bb98b31164a64bc692fb9fed0b134490.bindPopup(popup_6b22403cdc394bdca5796e14676c04b4)
+        ;
+
+        
+    
+    
+            circle_marker_bb98b31164a64bc692fb9fed0b134490.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f5bd0e5007d94c07b127e10ee0833cfb = L.circleMarker(
+                [42.88449, -78.8623],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.05108733172247, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_cc00b18c0dfa4fc19e5cb875f40da995 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f24449604794c389b2f485a6c949042 = $(`<div id="html_8f24449604794c389b2f485a6c949042" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>downtown right: 14204</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>93</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.1%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_cc00b18c0dfa4fc19e5cb875f40da995.setContent(html_8f24449604794c389b2f485a6c949042);
+        
+
+        circle_marker_f5bd0e5007d94c07b127e10ee0833cfb.bindPopup(popup_cc00b18c0dfa4fc19e5cb875f40da995)
+        ;
+
+        
+    
+    
+            circle_marker_f5bd0e5007d94c07b127e10ee0833cfb.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c45e9b8f20a24796bf45cf7a54ff65c8 = L.circleMarker(
+                [42.880699, -78.81424],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.674280757553852, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_af4baf11d91a4ee9a73d06748e636416 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09a74efdaca843e384474c46854f7841 = $(`<div id="html_09a74efdaca843e384474c46854f7841" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>West Seneca: 14206</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>120</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>5</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.6%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>2.5</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_af4baf11d91a4ee9a73d06748e636416.setContent(html_09a74efdaca843e384474c46854f7841);
+        
+
+        circle_marker_c45e9b8f20a24796bf45cf7a54ff65c8.bindPopup(popup_af4baf11d91a4ee9a73d06748e636416)
+        ;
+
+        
+    
+    
+            circle_marker_c45e9b8f20a24796bf45cf7a54ff65c8.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9974a98c13114b9eaf2ebff99cc2b3de = L.circleMarker(
+                [42.951, -78.895],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.449898097826086, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_5df3e693211646cb82a10587b6319cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d30bff528d5449e8a122824ccb8ce669 = $(`<div id="html_d30bff528d5449e8a122824ccb8ce669" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Black Rock/Upper West Side: 14207</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>431</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>36</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.8%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>5.1</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_5df3e693211646cb82a10587b6319cc7.setContent(html_d30bff528d5449e8a122824ccb8ce669);
+        
+
+        circle_marker_9974a98c13114b9eaf2ebff99cc2b3de.bindPopup(popup_5df3e693211646cb82a10587b6319cc7)
+        ;
+
+        
+    
+    
+            circle_marker_9974a98c13114b9eaf2ebff99cc2b3de.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffdc28439a464714b9198fd767ba5a9e = L.circleMarker(
+                [42.9155, -78.8515],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.831460674157302, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_4d348cd4cbd9440e93eaaad4d284e8c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6284a61b16774b299447cdb730d3ea7d = $(`<div id="html_6284a61b16774b299447cdb730d3ea7d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hamlin Park: 14208</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>199</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.8%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_4d348cd4cbd9440e93eaaad4d284e8c5.setContent(html_6284a61b16774b299447cdb730d3ea7d);
+        
+
+        circle_marker_ffdc28439a464714b9198fd767ba5a9e.bindPopup(popup_4d348cd4cbd9440e93eaaad4d284e8c5)
+        ;
+
+        
+    
+    
+            circle_marker_ffdc28439a464714b9198fd767ba5a9e.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_91ed32875fac4820bea71841303be63e = L.circleMarker(
+                [42.917, -78.86399999999999],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.03936411809235, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_c5e50764b20947e58d1820c40a66f3b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f663ad721a34c6a9a023208b2ad87e9 = $(`<div id="html_9f663ad721a34c6a9a023208b2ad87e9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Main (allen to park): 14209</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>201</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>2.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c5e50764b20947e58d1820c40a66f3b8.setContent(html_9f663ad721a34c6a9a023208b2ad87e9);
+        
+
+        circle_marker_91ed32875fac4820bea71841303be63e.bindPopup(popup_c5e50764b20947e58d1820c40a66f3b8)
+        ;
+
+        
+    
+    
+            circle_marker_91ed32875fac4820bea71841303be63e.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_774b8404b52343a283962b22a3b13f27 = L.circleMarker(
+                [42.86175, -78.83014],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.88117599020008, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_4c2230d787eb42ffae494b8567db802f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83671c5d390c4ef588fb88958d94e622 = $(`<div id="html_83671c5d390c4ef588fb88958d94e622" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Larkin Square/Seneca: 14210</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>87</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>3</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.6%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_4c2230d787eb42ffae494b8567db802f.setContent(html_83671c5d390c4ef588fb88958d94e622);
+        
+
+        circle_marker_774b8404b52343a283962b22a3b13f27.bindPopup(popup_4c2230d787eb42ffae494b8567db802f)
+        ;
+
+        
+    
+    
+            circle_marker_774b8404b52343a283962b22a3b13f27.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e44a2624c9f349589a366f07b462e93b = L.circleMarker(
+                [42.90795, -78.81925],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.309672283401884, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_2ee4413994fc4ffda368bf81611f627d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd03982101d943158a2a86c2cbdadcb7 = $(`<div id="html_fd03982101d943158a2a86c2cbdadcb7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>MLK Park: 14211</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>276</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>14</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.2%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>3.5</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2ee4413994fc4ffda368bf81611f627d.setContent(html_fd03982101d943158a2a86c2cbdadcb7);
+        
+
+        circle_marker_e44a2624c9f349589a366f07b462e93b.bindPopup(popup_2ee4413994fc4ffda368bf81611f627d)
+        ;
+
+        
+    
+    
+            circle_marker_e44a2624c9f349589a366f07b462e93b.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_288c921a289b42e29d1ef2fd7eb5b8b9 = L.circleMarker(
+                [42.8973, -78.81829],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.889202142655765, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_92f3becb9dd44334a00a8b9428122fc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6744856ec4a64dc09b6d4fea591d92c4 = $(`<div id="html_6744856ec4a64dc09b6d4fea591d92c4" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>sloan/broadway market/central terminal: 14212</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>134</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>3</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.3%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>1</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_92f3becb9dd44334a00a8b9428122fc2.setContent(html_6744856ec4a64dc09b6d4fea591d92c4);
+        
+
+        circle_marker_288c921a289b42e29d1ef2fd7eb5b8b9.bindPopup(popup_92f3becb9dd44334a00a8b9428122fc2)
+        ;
+
+        
+    
+    
+            circle_marker_288c921a289b42e29d1ef2fd7eb5b8b9.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efab5c21bd334767bd7ecb1b3a2f603b = L.circleMarker(
+                [42.9166, -78.8919],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.501532801961986, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_de5722a7f3da48ca90b2d728cb58eba7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c54f3966cdd450da260f430cb0fc178 = $(`<div id="html_4c54f3966cdd450da260f430cb0fc178" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>West Side: 14213</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>367</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>33</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>2.2</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_de5722a7f3da48ca90b2d728cb58eba7.setContent(html_4c54f3966cdd450da260f430cb0fc178);
+        
+
+        circle_marker_efab5c21bd334767bd7ecb1b3a2f603b.bindPopup(popup_de5722a7f3da48ca90b2d728cb58eba7)
+        ;
+
+        
+    
+    
+            circle_marker_efab5c21bd334767bd7ecb1b3a2f603b.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4add82c1db494e37b364fe0ecb65c7a2 = L.circleMarker(
+                [42.9387, -78.83975],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.164348925410872, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_aa5e40fa478542e5b408808d0d2fc6db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80520a1a6d8a46de877035a98d9756b7 = $(`<div id="html_80520a1a6d8a46de877035a98d9756b7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>South Main St/FLR House: 14214</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>134</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.7%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_aa5e40fa478542e5b408808d0d2fc6db.setContent(html_80520a1a6d8a46de877035a98d9756b7);
+        
+
+        circle_marker_4add82c1db494e37b364fe0ecb65c7a2.bindPopup(popup_aa5e40fa478542e5b408808d0d2fc6db)
+        ;
+
+        
+    
+    
+            circle_marker_4add82c1db494e37b364fe0ecb65c7a2.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd42fdfc43664e75862265879ea6e6bc = L.circleMarker(
+                [42.9334, -78.80815],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.18802970074252, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_68567093a4064b9d8a51ef85d3961550 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c90f4f3436c4f13bc8cb0819d2114b9 = $(`<div id="html_3c90f4f3436c4f13bc8cb0819d2114b9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>South Campus: 14215</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>565</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>1</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_68567093a4064b9d8a51ef85d3961550.setContent(html_3c90f4f3436c4f13bc8cb0819d2114b9);
+        
+
+        circle_marker_dd42fdfc43664e75862265879ea6e6bc.bindPopup(popup_68567093a4064b9d8a51ef85d3961550)
+        ;
+
+        
+    
+    
+            circle_marker_dd42fdfc43664e75862265879ea6e6bc.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7dd3ba06bb8c4119b5f9b81b522d0bca = L.circleMarker(
+                [42.9475, -78.8637],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.158352280326334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_222d036e87c54253ad2f59202c8f10f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea7a18b0f2aa41fcb23bcd807c4a8831 = $(`<div id="html_ea7a18b0f2aa41fcb23bcd807c4a8831" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Lloyds/Hertle: 14216</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>122</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_222d036e87c54253ad2f59202c8f10f0.setContent(html_ea7a18b0f2aa41fcb23bcd807c4a8831);
+        
+
+        circle_marker_7dd3ba06bb8c4119b5f9b81b522d0bca.bindPopup(popup_222d036e87c54253ad2f59202c8f10f0)
+        ;
+
+        
+    
+    
+            circle_marker_7dd3ba06bb8c4119b5f9b81b522d0bca.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82c424004fd5457787560bb777ed53e3 = L.circleMarker(
+                [42.9767, -78.8756],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.201873935264054, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_180f06402cc74bfca2bf4e9752a40485 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f9ca896528a4fa8a7a9ba518f15d98d = $(`<div id="html_0f9ca896528a4fa8a7a9ba518f15d98d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>North Elmwood (Clay Handi): 14217</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>191</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>5</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.8%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>5</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_180f06402cc74bfca2bf4e9752a40485.setContent(html_0f9ca896528a4fa8a7a9ba518f15d98d);
+        
+
+        circle_marker_82c424004fd5457787560bb777ed53e3.bindPopup(popup_180f06402cc74bfca2bf4e9752a40485)
+        ;
+
+        
+    
+    
+            circle_marker_82c424004fd5457787560bb777ed53e3.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aa6f190f834649c9828977411a98215c = L.circleMarker(
+                [42.8155, -78.8112],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.193707652712853, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_f533df3ea59e4830b17988cf0a66bb34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95d3fe5a1623418ba37c4286def73d84 = $(`<div id="html_95d3fe5a1623418ba37c4286def73d84" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Lackawana: 14218</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>104</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f533df3ea59e4830b17988cf0a66bb34.setContent(html_95d3fe5a1623418ba37c4286def73d84);
+        
+
+        circle_marker_aa6f190f834649c9828977411a98215c.bindPopup(popup_f533df3ea59e4830b17988cf0a66bb34)
+        ;
+
+        
+    
+    
+            circle_marker_aa6f190f834649c9828977411a98215c.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0bab0da80aa4fb0a8976b89cecb9591 = L.circleMarker(
+                [42.7879, -78.8293],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.191747572815533, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_378c7d18648a4a839fbf608c362f4f4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53a248b3d2de485db215dc67aa0dd089 = $(`<div id="html_53a248b3d2de485db215dc67aa0dd089" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Blasdell (wegmans): 14219</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>63</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>3</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0.8</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_378c7d18648a4a839fbf608c362f4f4b.setContent(html_53a248b3d2de485db215dc67aa0dd089);
+        
+
+        circle_marker_e0bab0da80aa4fb0a8976b89cecb9591.bindPopup(popup_378c7d18648a4a839fbf608c362f4f4b)
+        ;
+
+        
+    
+    
+            circle_marker_e0bab0da80aa4fb0a8976b89cecb9591.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4a136fc645c140d796a6c595a59fab0d = L.circleMarker(
+                [42.84474, -78.82575],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.615470343005738, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_8babd0f23db246debee695d4208b1f8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1404c23db6d046f09cfdcb6f6590f213 = $(`<div id="html_1404c23db6d046f09cfdcb6f6590f213" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>south park (mercy hospital of buffalo: 14220</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>123</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_8babd0f23db246debee695d4208b1f8a.setContent(html_1404c23db6d046f09cfdcb6f6590f213);
+        
+
+        circle_marker_4a136fc645c140d796a6c595a59fab0d.bindPopup(popup_8babd0f23db246debee695d4208b1f8a)
+        ;
+
+        
+    
+    
+            circle_marker_4a136fc645c140d796a6c595a59fab0d.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c2fa784aeac94194a79b1e1a4c68a5f0 = L.circleMarker(
+                [42.9872, -78.7222],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.32377929231631, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_8040afb3c3fe4bc6a9e8e92c82d802dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2f4f94551574eabb20cf77f81040d4c = $(`<div id="html_b2f4f94551574eabb20cf77f81040d4c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Williamsville: 14221</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>440</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.8%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_8040afb3c3fe4bc6a9e8e92c82d802dd.setContent(html_b2f4f94551574eabb20cf77f81040d4c);
+        
+
+        circle_marker_c2fa784aeac94194a79b1e1a4c68a5f0.bindPopup(popup_8040afb3c3fe4bc6a9e8e92c82d802dd)
+        ;
+
+        
+    
+    
+            circle_marker_c2fa784aeac94194a79b1e1a4c68a5f0.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cad90e5e0545459abaac2d29355f7503 = L.circleMarker(
+                [42.9178, -78.8747],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.446390431439556, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_3dd2e0db9b5d4bc696a50a717962841c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e9f27dd32d7457785bbc68749c5b17f = $(`<div id="html_4e9f27dd32d7457785bbc68749c5b17f" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Elmwood Village: 14222</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>51</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_3dd2e0db9b5d4bc696a50a717962841c.setContent(html_4e9f27dd32d7457785bbc68749c5b17f);
+        
+
+        circle_marker_cad90e5e0545459abaac2d29355f7503.bindPopup(popup_3dd2e0db9b5d4bc696a50a717962841c)
+        ;
+
+        
+    
+    
+            circle_marker_cad90e5e0545459abaac2d29355f7503.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fed31cecfeef4b7ca6066d9c27208604 = L.circleMarker(
+                [42.97428, -78.8478],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.346128391793514, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_207c2785fb58491b8e05c19327dd4215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6460a84456b14412a4c4c9f2973f02bd = $(`<div id="html_6460a84456b14412a4c4c9f2973f02bd" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>South Campus (Lincoln Park): 14223</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>111</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_207c2785fb58491b8e05c19327dd4215.setContent(html_6460a84456b14412a4c4c9f2973f02bd);
+        
+
+        circle_marker_fed31cecfeef4b7ca6066d9c27208604.bindPopup(popup_207c2785fb58491b8e05c19327dd4215)
+        ;
+
+        
+    
+    
+            circle_marker_fed31cecfeef4b7ca6066d9c27208604.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_047615325c9d464ab31918cd8c12d2c6 = L.circleMarker(
+                [42.83744, -78.7429],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.934518288249893, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_27ea768814644d73a22e8963a2e3407e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edbba1a3ec8d483e82499a1a5ce7f174 = $(`<div id="html_edbba1a3ec8d483e82499a1a5ce7f174" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>West Seneca: 14224</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>211</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_27ea768814644d73a22e8963a2e3407e.setContent(html_edbba1a3ec8d483e82499a1a5ce7f174);
+        
+
+        circle_marker_047615325c9d464ab31918cd8c12d2c6.bindPopup(popup_27ea768814644d73a22e8963a2e3407e)
+        ;
+
+        
+    
+    
+            circle_marker_047615325c9d464ab31918cd8c12d2c6.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1191a0a76b8249b3b0e694052adb44fc = L.circleMarker(
+                [42.9267, -78.748],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.154260895611802, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_a1b45bda69b040748cfb0169f5aeca81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cf9c6d4df354e85b5f9191344dcd5c6 = $(`<div id="html_4cf9c6d4df354e85b5f9191344dcd5c6" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Cheektowaga/Airport: 14225</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>226</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>1</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.7%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>1</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a1b45bda69b040748cfb0169f5aeca81.setContent(html_4cf9c6d4df354e85b5f9191344dcd5c6);
+        
+
+        circle_marker_1191a0a76b8249b3b0e694052adb44fc.bindPopup(popup_a1b45bda69b040748cfb0169f5aeca81)
+        ;
+
+        
+    
+    
+            circle_marker_1191a0a76b8249b3b0e694052adb44fc.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b86d8e372a0499abd65b2a5a6597cef = L.circleMarker(
+                [42.9761, -78.7937],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.277821437113473, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_f4a7586491734aecb08e29a0c224ff47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecaec195d1004f5fb82ac88ed4053d4b = $(`<div id="html_ecaec195d1004f5fb82ac88ed4053d4b" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Amherst: 14226</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>142</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.5%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f4a7586491734aecb08e29a0c224ff47.setContent(html_ecaec195d1004f5fb82ac88ed4053d4b);
+        
+
+        circle_marker_5b86d8e372a0499abd65b2a5a6597cef.bindPopup(popup_f4a7586491734aecb08e29a0c224ff47)
+        ;
+
+        
+    
+    
+            circle_marker_5b86d8e372a0499abd65b2a5a6597cef.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81938f87dc46459a9b10b91e35c1e961 = L.circleMarker(
+                [42.8855, -78.7448],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.239477503628446, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_f31b9db7c9f94ac29b46ebb43bedc5b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe0c6eba66c040fba68492fad1dad75d = $(`<div id="html_fe0c6eba66c040fba68492fad1dad75d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Cheektowaga (bellevue): 14227</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>238</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>1.0%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f31b9db7c9f94ac29b46ebb43bedc5b8.setContent(html_fe0c6eba66c040fba68492fad1dad75d);
+        
+
+        circle_marker_81938f87dc46459a9b10b91e35c1e961.bindPopup(popup_f31b9db7c9f94ac29b46ebb43bedc5b8)
+        ;
+
+        
+    
+    
+            circle_marker_81938f87dc46459a9b10b91e35c1e961.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09cee2e654ad44848152dda9ca9774e8 = L.circleMarker(
+                [43.038299, -78.778411],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.616483674545716, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_dfac58ea439344d1a047506325f29114);
+        
+    
+        var popup_42ee6db3fc344a86bf66f4b78252ea54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8b8c4c75e794901beb5de03b11ca51d = $(`<div id="html_d8b8c4c75e794901beb5de03b11ca51d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>North Campus: 14228</th>     </tr>   </thead>   <tbody>     <tr>       <th>Total Cases</th>       <td>92</td>     </tr>     <tr>       <th>Daily Cases</th>       <td>0</td>     </tr>     <tr>       <th>% Infected</th>       <td>0.4%</td>     </tr>     <tr>       <th>Growth Factor</th>       <td>0</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_42ee6db3fc344a86bf66f4b78252ea54.setContent(html_d8b8c4c75e794901beb5de03b11ca51d);
+        
+
+        circle_marker_09cee2e654ad44848152dda9ca9774e8.bindPopup(popup_42ee6db3fc344a86bf66f4b78252ea54)
+        ;
+
+        
+    
+    
+            circle_marker_09cee2e654ad44848152dda9ca9774e8.bindTooltip(
+                `<div>
+                     Click to expand 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_97a9086770bf4d64ba450fb730ce23d0 = L.featureGroup(
+                {}
+            ).addTo(map_f2440ba2915c4cd08e2f4452480fb1b7);
+        
+    
+            var heat_map_597fbb6d59464190bef9ec16264a3d29 = L.heatLayer(
+                [[43.0414, -78.4963, 3.0], [42.894667999999996, -78.4833, 0.0], [42.6361, -79.02794, 0.0], [43.0811, -78.4012, 0.0], [42.6214, -78.7217, 0.0], [42.9441, -78.6867, 0.0], [42.5737, -78.507, 1.0], [42.993, -78.607, 2.0], [43.04275, -78.6292, 0.0], [42.6521, -78.6869, 0.0], [42.49089, -78.8573, 0.0], [42.8054, -78.4507, 0.0], [42.89925, -78.70735, 2.0], [42.69266, -78.9934, 2.0], [43.0442, -78.695, 0.0], [42.775, -78.5753, 11.0], [42.5468, -78.5954, 0.0], [42.6417, -78.8709, 1.0], [42.8255, -78.62666, 0.0], [43.0269, -78.762, 8.0], [42.6057, -78.6191, 0.0], [42.44377, -78.90769, 2.0], [43.0119, -78.9559, 4.0], [42.716, -78.82434, 0.0], [42.6405, -78.5435, 1.0], [42.4617, -79.027, 0.0], [42.71738, -72.95, 0.0], [42.905840000000005, -78.6296, 10.0], [42.5386, -78.9061, 0.0], [42.8368, -78.5573, 1.0], [42.581, -78.8707, 0.0], [42.7429, -78.7569, 0.0], [42.5276, -78.5045, 0.0], [42.69757, -78.5433, 0.0], [42.5329, -78.7157, 0.0], [42.7296, -78.41938, 0.0], [42.992979999999996, -78.8812, 0.0], [42.7087, -78.6647, 0.0], [42.894, -78.8872, 3.0], [42.888000000000005, -78.8762, 0.0], [42.8676, -78.87388, 2.0], [42.88449, -78.8623, 0.0], [42.880699, -78.81424, 5.0], [42.951, -78.895, 36.0], [42.9155, -78.8515, 0.0], [42.917, -78.86399999999999, 0.0], [42.86175, -78.83014, 3.0], [42.90795, -78.81925, 14.0], [42.8973, -78.81829, 3.0], [42.9166, -78.8919, 33.0], [42.9387, -78.83975, 0.0], [42.9334, -78.80815, 1.0], [42.9475, -78.8637, 0.0], [42.9767, -78.8756, 5.0], [42.8155, -78.8112, 0.0], [42.7879, -78.8293, 3.0], [42.84474, -78.82575, 0.0], [42.9872, -78.7222, 0.0], [42.9178, -78.8747, 0.0], [42.97428, -78.8478, 0.0], [42.83744, -78.7429, 0.0], [42.9267, -78.748, 1.0], [42.9761, -78.7937, 0.0], [42.8855, -78.7448, 0.0], [43.038299, -78.778411, 0.0]],
+                {"blur": 33, "max": 1.0, "maxZoom": 15, "minOpacity": 0.5, "radius": 40}
+            ).addTo(feature_group_97a9086770bf4d64ba450fb730ce23d0);
+        
+    
+            var layer_control_1917dc8e90184c5caee5c8f27a9446bc = {
+                base_layers : {
+                    "stamentoner" : tile_layer_e8369f2c5f924d3a93eea808a2f8a049,
+                },
+                overlays :  {
+                    "% of Cases by ZIP" : marker_cluster_dfac58ea439344d1a047506325f29114,
+                    "Daily Cases Heat Map" : feature_group_97a9086770bf4d64ba450fb730ce23d0,
+                },
+            };
+            L.control.layers(
+                layer_control_1917dc8e90184c5caee5c8f27a9446bc.base_layers,
+                layer_control_1917dc8e90184c5caee5c8f27a9446bc.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_f2440ba2915c4cd08e2f4452480fb1b7);
+            marker_cluster_dfac58ea439344d1a047506325f29114.remove();
+            feature_group_97a9086770bf4d64ba450fb730ce23d0.remove();
+        
+</script>
