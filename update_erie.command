@@ -27,11 +27,11 @@ response = requests.get('https://erieny.maps.arcgis.com/sharing/rest/content/ite
 #Request date of most recent update
 timestamp = response.json()['headerPanel']['subtitle']
 
-date = timestamp[9:19]
-time = timestamp[20:-1]
+date = timestamp[9:18]
+#time = timestamp[20:-1]
 
 print('Date: '+str(date))
-print('Time: '+str(time))
+#print('Time: '+str(time))
 #--------------
 
 #Request daily totals
