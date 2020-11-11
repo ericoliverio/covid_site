@@ -14,5 +14,8 @@ Uses erie_total.csv to calculate metrics and create reports/visualization (bar g
   erie_diff.csv # Daily cases per zip code
   diff_avg.csv # 7 day average of daily cases per zip code
   
-  daily_report.csv #(not used)
+  daily_report.csv #provides data for erie_folium.py to create website
+  
+  3) erie_folium.py
+  Uses daily_report.csv to map spread metrics on website
   
