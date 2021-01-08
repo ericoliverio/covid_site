@@ -26,8 +26,7 @@ response = requests.get('https://erieny.maps.arcgis.com/sharing/rest/content/ite
 
 #Request date of most recent update
 timestamp = response.json()['headerPanel']['subtitle']
-
-date = timestamp[9:18]
+date = timestamp.split()[-1][:-1]
 #time = timestamp[20:-1]
 
 print('Date: '+str(date))
