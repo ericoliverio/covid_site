@@ -25,7 +25,7 @@ params1 = (
 response = requests.get('https://erieny.maps.arcgis.com/sharing/rest/content/items/dd7f1c0c352e4192ab162a1dfadc58e1/data', headers=headers, params=params1)
 
 #Request date of most recent update
-timestamp = response.json()['headerPanel']['subtitle']
+timestamp = response.json()['header']['subtitle']
 date = timestamp.split()[-1][:-1]
 #time = timestamp[20:-1]
 
