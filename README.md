@@ -31,11 +31,13 @@ Contains attempts at other forms of spatial/map visualizations using the python 
 
 8) erie.mv - Shows the spread and change in density of new Covid-19 cases over a series of months.
   ![Screen Shot 2023-01-06 at 11 19 46 AM](https://user-images.githubusercontent.com/25538281/211053200-6e30234c-065d-4b4e-aa66-08bfe24c1670.png)
+  
+9) erie_demographics.csv - Contains race demographic information collected from the U.S. Census Bureau. Use to determine how Covid-19 affected minorities in the city, especially in the East and West sides following reopeing.
 
 
 (Outdated)
 
-9) daily_report.csv - Provides data for erie_folium.py to create website  
-10) active_cases.csv - Active cases by municipalities in Erie County (avaiable in website data, but never updated. Current data is old)
-11) munc_erie.csv - Daily total Covid-19 cases per municipality since 11/11/2020
-12) erie_summary.csv - County total positives, deaths, testing totals and percentages since 11/6/2020
+* daily_report.csv - Provides data for erie_folium.py to create website  
+* active_cases.csv - Active cases by municipalities in Erie County (avaiable in website data, but never updated. Current data is old)
+* munc_erie.csv - Daily total Covid-19 cases per municipality since 11/11/2020
+* erie_summary.csv - County total positives, deaths, testing totals and percentages since 11/6/2020
