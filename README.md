@@ -13,6 +13,8 @@ http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab16
 4) erie_diff.csv - Reported daily new cases per ZIP code since June (current day cases - previous day cases for erie_total.csv)
 
 5) diff_avg.csv - Average daily new cases per ZIP code since June (7-10 day average / Depends on frequency of updates)
+
+6) tall_avg.csv, total_tall.csv - reformatted daily new case and daily new average case data for use in Tableau visualization.
  
 (Outdated)
 
