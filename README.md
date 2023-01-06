@@ -1,5 +1,5 @@
 # Tracking Covid-19 Cases in Erie County, NY By ZIP Code
-This project started as I found the COVID-19 dashboard run by Erie count hard to read, and not conveying the information I found most important (where are cases trending upwards? How do the current new cases compare to other zip codes?)
+This project started as I found the COVID-19 dashboard run by Erie County hard to read and not conveying the information I found most important (where are cases trending upwards? How do the current new cases compare to other zip codes?)
 
 1) update_erie.command - Run this to scrape daily covid-19 data by ZIP code for Erie County and save results in erie_total.csv
 
