@@ -1,4 +1,4 @@
-# Tracking Covid-19 Cases in Erie County, NY By ZIP Code
+# Tracking Covid-19 Cases over time in Erie County, NY by ZIP Code
 This project started as I found the Covid-19 dashboard run by Erie County hard to read and not conveying the information I found most important (where are cases trending upwards? How do the current new cases compare to other ZIP codes?). Contains the only source for ZIP code-level Covid-19 data for Erie county collected over the period of two years. Featured on, and used by The Buffalo News. 
 
 ![Me](https://user-images.githubusercontent.com/25538281/211057268-0c637f6e-25ad-42c2-af6c-0e86bfa13caa.png)
