@@ -9,16 +9,18 @@ http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab16
 
 ![Screen Shot 2023-01-06 at 11 06 34 AM](https://user-images.githubusercontent.com/25538281/211050942-7b6dee64-ab77-4ef2-8f8b-2b53172db097.png)
 
-2) erie_total.csv - Daily total Covid-19 cases per ZIP code since June 2020. Also contains population, area (square feet), and coordinates for each zip code.
+2) erie_total.csv - Daily total Covid-19 cases per ZIP code since June 2020. Also contains population, area (square feet), and coordinates for each zip code. I have manually assigned a neighborhood name to each ZIP code.
 
 3) read_erie.py - Run this to calculate the number of new cases per day per zip code, as well as the average daily new cases. Results are saved in erie_diff.csv and diff_avg.csv. Will display a sorted bar chart of the zip codes with the largest increase in cases.
-![New Cases Sorted](https://user-images.githubusercontent.com/25538281/211050666-d70a17a3-cb1e-491a-a151-26fc269c1a23.png)
+
+![New Cases Sorted](https://user-images.githubusercontent.com/25538281/211052127-2f6597ec-e3ec-4788-9112-ec78294528e7.png)
 
 4) erie_diff.csv - Reported daily new cases per ZIP code since June (current day cases - previous day cases for erie_total.csv)
 
 5) diff_avg.csv - Average daily new cases per ZIP code since June (7-10 day average / Depends on frequency of updates)
 
 6) tall_avg.csv, total_tall.csv - reformatted daily new case and daily new average case data for use in Tableau visualization.
+https://public.tableau.com/app/profile/eric.oliverio/viz/AverageDailyCasesPerPop/Dashboard1 
  ![Screen Shot 2023-01-06 at 11 07 35 AM](https://user-images.githubusercontent.com/25538281/211051076-518894b5-563c-45fd-8a63-d530f8003d45.png)
 
 (Outdated)
