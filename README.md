@@ -23,9 +23,19 @@ http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab16
 https://public.tableau.com/app/profile/eric.oliverio/viz/AverageDailyCasesPerPop/Dashboard1 
  ![Screen Shot 2023-01-06 at 11 07 35 AM](https://user-images.githubusercontent.com/25538281/211051076-518894b5-563c-45fd-8a63-d530f8003d45.png)
 
+# Reports
+Contains attempts at other forms of spatial/map visualizations using the python folium package.
+
+7) erie_covid.html - scrollable/zoomable map with a heat map showing density of cases.
+![Screen Shot 2023-01-06 at 11 17 30 AM](https://user-images.githubusercontent.com/25538281/211052967-1a5aa233-1410-418f-b778-f725a22a2e11.png)
+
+8) erie.mv - Shows the spread and change in density of new Covid-19 cases over a series of months.
+  ![Screen Shot 2023-01-06 at 11 19 46 AM](https://user-images.githubusercontent.com/25538281/211053200-6e30234c-065d-4b4e-aa66-08bfe24c1670.png)
+
+
 (Outdated)
 
-7) daily_report.csv - Provides data for erie_folium.py to create website  
-8) active_cases.csv - Active cases by municipalities in Erie County (avaiable in website data, but never updated. Current data is old)
-9) munc_erie.csv - Daily total Covid-19 cases per municipality since 11/11/2020
-10) erie_summary.csv - County total positives, deaths, testing totals and percentages since 11/6/2020
+9) daily_report.csv - Provides data for erie_folium.py to create website  
+10) active_cases.csv - Active cases by municipalities in Erie County (avaiable in website data, but never updated. Current data is old)
+11) munc_erie.csv - Daily total Covid-19 cases per municipality since 11/11/2020
+12) erie_summary.csv - County total positives, deaths, testing totals and percentages since 11/6/2020
