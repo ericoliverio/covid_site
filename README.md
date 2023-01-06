@@ -15,6 +15,7 @@ http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab16
 5) diff_avg.csv - Average daily new cases per ZIP code since June (7-10 day average / Depends on frequency of updates)
  
 (Outdated)
+
 6) daily_report.csv - Provides data for erie_folium.py to create website  
 7) active_cases.csv - Active cases by municipalities in Erie County (avaiable in website data, but never updated. Current data is old)
 8) munc_erie.csv - Daily total Covid-19 cases per municipality since 11/11/2020
