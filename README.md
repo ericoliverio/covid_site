@@ -34,6 +34,12 @@ Contains attempts at other forms of spatial/map visualizations using the python 
   
 9) erie_demographics.csv - Contains race demographic information collected from the U.S. Census Bureau. Use to determine how Covid-19 affected minorities in the city, especially in the East and West sides following reopeing.
 
+# Notes
+Early data indicated that ZIP codes with older demographics/retirment homes had higher instances of Covid-19 in the earlier days of the pandemic. A Freedom of Information request was sent to Erie County to gain access to all their Covid-19 case data over the entire pandemic. The request was denied, appealed, and denied again.
+
+
+![Screen Shot 2023-01-06 at 11 31 45 AM](https://user-images.githubusercontent.com/25538281/211055850-3908f71f-9aa5-4494-9a2d-06a987e2a98f.png)
+
 
 (Outdated)
 
