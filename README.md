@@ -1,19 +1,18 @@
 # Tracking Covid-19 Cases in Erie County, NY By ZIP Code
 
-1) update_erie.command - Scrapes daily covid-19 data by ZIP code for Erie County. Data is saved in erie_total.csv
----
+1) update_erie.command - Run this to scrape daily covid-19 data by ZIP code for Erie County and save results in erie_total.csv
+
 Data is scraped daily from the Erie County Department of Health Deshboard at:
 http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1
-
 (Data on population, sq. milage, and approximate coordinates of each ZIP code are acquired from the same website)
 
 2) erie_total.csv - Daily total Covid-19 cases per ZIP code since June 2020. Also contains population, area (square feet), and coordinates for each zip code.
----
-3) read_erie.py - Calculated the number of new cases per day per zip code, as well as the average daily new cases. Results are saved in erie_diff.csv and diff_avg.csv.
 
-4) erie_diff.csv - Reported new cases per ZIP code since June (current day cases - previous day cases for erie_total.csv)
+3) read_erie.py - Run this to calculate the number of new cases per day per zip code, as well as the average daily new cases. Results are saved in erie_diff.csv and diff_avg.csv.
 
-5) diff_avg.csv - Average daily cases per ZIP code since June (7-10 day average / Depends on frequency of updates)
+4) erie_diff.csv - Reported daily new cases per ZIP code since June (current day cases - previous day cases for erie_total.csv)
+
+5) diff_avg.csv - Average daily new cases per ZIP code since June (7-10 day average / Depends on frequency of updates)
  
 (Outdated)
 6) daily_report.csv - Provides data for erie_folium.py to create website  
